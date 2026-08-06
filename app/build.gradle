@@ -29,11 +29,22 @@ android {
         kotlinCompilerExtensionVersion = "1.5.8"
     }
 
+    signingConfigs {
+        release {
+            storeFile file("../n1ckverse-release.jks")
+            storePassword "Shivu@403"
+            keyAlias "n1ckverse"
+            keyPassword "Shivu@403"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             shrinkResources true
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
         }
     }
 
@@ -53,7 +64,9 @@ android {
     namespace 'com.n1ckverse.unicode'
 
     lint {
-        disable 'ResourceType', 'GoogleAppIndexingWarning', 'NullSafeMutableLiveData'
+        disable 'ResourceType',
+                'GoogleAppIndexingWarning',
+                'NullSafeMutableLiveData'
     }
 }
 
@@ -71,7 +84,7 @@ dependencies {
     // Material Design 3
     implementation 'com.google.android.material:material:1.11.0'
 
-    // Compose BOM – versions managed centrally
+    // Compose BOM
     def composeBom = platform('androidx.compose:compose-bom:2024.02.00')
     implementation composeBom
     debugImplementation composeBom
@@ -90,9 +103,9 @@ dependencies {
     // Drag-and-drop list
     implementation 'com.github.woxthebox:draglistview:1.7.3'
 
-    // Showcase (tutorial)
+    // Showcase
     implementation 'com.github.mreram:showcaseview:1.4.1'
 
-    // Ads (play flavor only)
+    // Ads
     playImplementation 'com.google.android.gms:play-services-ads-lite:22.6.0'
 }
