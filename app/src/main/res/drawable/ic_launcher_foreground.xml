@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    N1ckVerse adaptive icon foreground — vector drawable
+    Design: stylised "N1" with a Unicode code-point ring badge
+    Safe zone: 108dp total canvas, content inside 72dp centred circle
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background filled by the adaptive-icon layer; foreground is transparent outside -->
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#22FFFFFF"
+        android:pathData="M54,54 m-38,0 a38,38 0 1,0 76,0 a38,38 0 1,0 -76,0" />
+
+    <!-- Inner ring -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M54,54 m-30,0 a30,30 0 1,0 60,0 a30,30 0 1,0 -60,0" />
+
+    <!-- "N" letter body — bold, slightly left of centre -->
+    <!-- Left vertical bar -->
+    <rect
+        android:fillColor="#FFFFFFFF"
+        android:left="26"
+        android:top="33"
+        android:right="33"
+        android:bottom="75" />
+    <!-- Diagonal stroke of N -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M26,33 L26,40 L49,72 L49,75 L56,75 L56,68 L33,36 L33,33 Z" />
+    <!-- Right vertical bar of N -->
+    <rect
+        android:fillColor="#FFFFFFFF"
+        android:left="49"
+        android:top="33"
+        android:right="56"
+        android:bottom="75" />
+
+    <!-- "1" digit — right side, slightly smaller, offset for balance -->
+    <!-- Vertical bar of 1 -->
+    <rect
+        android:fillColor="#FFE0B2FF"
+        android:left="63"
+        android:top="36"
+        android:right="70"
+        android:bottom="75" />
+    <!-- Serif top-left stroke of 1 -->
+    <path
+        android:fillColor="#FFE0B2FF"
+        android:pathData="M58,43 L63,36 L70,36 L70,43 Z" />
+
+    <!-- Unicode superscript "U+" badge — bottom right -->
+    <!-- Badge background circle -->
+    <path
+        android:fillColor="#FFBB86FC"
+        android:pathData="M77,71 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+
+</vector>

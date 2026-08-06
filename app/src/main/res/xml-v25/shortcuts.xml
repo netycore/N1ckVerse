@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="paste"
+        android:icon="@drawable/ic_shortcut_paste"
+        android:shortcutShortLabel="@android:string/paste">
+        <intent
+            android:action="com.n1ckverse.unicode.intent.action.PASTE"
+            android:targetPackage="com.n1ckverse.unicode"
+            android:targetClass="com.n1ckverse.unicode.UnicodeActivity" />
+    </shortcut>
+</shortcuts>

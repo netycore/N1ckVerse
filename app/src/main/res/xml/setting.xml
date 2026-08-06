@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="gen"
+        android:title="@string/general">
+        <ListPreference
+            android:defaultValue="@string/version_def"
+            android:dialogTitle="@string/version_desc"
+            android:entries="@array/version"
+            android:entryValues="@array/version_val"
+            android:key="universion"
+            android:summary=""
+            android:title="@string/version_desc" />
+        <ListPreference
+            android:defaultValue="@string/emojicompat_def"
+            android:dialogTitle="@string/emojicompat_desc"
+            android:entries="@array/emojicompat"
+            android:entryValues="@array/emojicompat_val"
+            android:key="emojicompat"
+            android:summary=""
+            android:title="@string/emojicompat_desc" />
+        <Preference
+            android:key="download"
+            android:summary="@string/download_uri"
+            android:title="@string/download_desc" />
+        <Preference
+            android:key="export"
+            android:title="@string/export_data" />
+        <Preference
+            android:key="import"
+            android:title="@string/import_data" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="app"
+        android:title="@string/appearance">
+        <ListPreference
+            android:defaultValue="darktitle"
+            android:dialogTitle="@string/theme_desc"
+            android:entries="@array/theme"
+            android:entryValues="@array/theme_val"
+            android:key="theme"
+            android:title="@string/theme_desc" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="no-ad"
+            android:title="@string/no_ad_desc" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="skip_guide"
+            android:title="@string/skip_guide_desc" />
+        <Preference
+            android:key="tabs"
+            android:title="@string/tabs_desc" />
+        <EditTextPreference
+            android:defaultValue="@string/gridsize_def"
+            android:dialogTitle="@string/gridsize_desc"
+            android:key="gridsize"
+            android:inputType="numberDecimal"
+            android:summary=""
+            android:title="@string/gridsize_desc" />
+        <EditTextPreference
+            android:defaultValue="4"
+            android:dialogTitle="@string/padding_desc"
+            android:key="padding"
+            android:inputType="number"
+            android:summary=""
+            android:title="@string/padding_desc" />
+        <ListPreference
+            android:defaultValue="8"
+            android:dialogTitle="@string/column_desc"
+            android:entries="@array/column"
+            android:entryValues="@array/column"
+            android:key="column"
+            android:summary=""
+            android:title="@string/column_desc" />
+        <ListPreference
+            android:defaultValue="8"
+            android:dialogTitle="@string/columnl_desc"
+            android:entries="@array/column"
+            android:entryValues="@array/column_val"
+            android:key="columnl"
+            android:summary=""
+            android:title="@string/columnl_desc" />
+        <EditTextPreference
+            android:defaultValue="@string/textsize_def"
+            android:dialogTitle="@string/textsize_desc"
+            android:key="textsize"
+            android:inputType="numberDecimal"
+            android:summary=""
+            android:title="@string/textsize_desc" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="multiline"
+            android:title="@string/multiline_desc" />
+        <EditTextPreference
+            android:defaultValue="@string/viewsize_def"
+            android:dialogTitle="@string/viewsize_desc"
+            android:key="viewsize"
+            android:inputType="numberDecimal"
+            android:summary=""
+            android:title="@string/viewsize_desc" />
+        <EditTextPreference
+            android:defaultValue="@string/checker_def"
+            android:dialogTitle="@string/checker_desc"
+            android:key="checker"
+            android:inputType="numberDecimal"
+            android:summary=""
+            android:title="@string/checker_desc" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="lines"
+            android:title="@string/lines_desc" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="shrink"
+            android:title="@string/shrink_desc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="beh"
+        android:title="@string/behaviour">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ime"
+            android:title="@string/ime_desc" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="clear"
+            android:title="@string/clear_desc" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="buttons"
+            android:title="@string/buttons_desc" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/scroll_desc"
+            android:entries="@array/scroll"
+            android:entryValues="@array/scroll_val"
+            android:key="scroll"
+            android:summary=""
+            android:title="@string/scroll_desc" />
+        <EditTextPreference
+            android:defaultValue="256"
+            android:dialogTitle="@string/recent_desc"
+            android:key="recentsize"
+            android:inputType="number"
+            android:summary=""
+            android:title="@string/recent_desc" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="process_text"
+            android:title="@string/process_text_desc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="legal"
+        android:title="@string/legal">
+        <Preference
+            android:key="legal_app"
+            android:summary="@string/legal_app2"
+            android:title="@string/legal_app" />
+        <Preference
+            android:key="legal_uni"
+            android:summary="@string/legal_uni2"
+            android:title="@string/legal_uni" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

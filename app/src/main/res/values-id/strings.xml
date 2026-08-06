@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UnicodePad</string>
+    <string name="delete">Hapus</string>
+    <string name="desc">Detail</string>
+    <string name="find">Cari</string>
+    <string name="fhint">Masukkan nama karakter</string>
+    <string name="inlist">Cari dalam daftar</string>
+    <string name="copied">Disalin ke clipboard</string>
+    <string name="finish">Selesai</string>
+    <string name="share">Bagikan</string>
+    <string name="undo">Urungkan</string>
+    <string name="redo">Ulangi</string>
+    <string name="convert">Konversi</string>
+    <string name="convert_">Konversi…</string>
+    <string name="font">Font</string>
+    <string name="favorite">Favorit</string>
+    <string name="recent">Baru-baru ini</string>
+    <string name="list">Daftar</string>
+    <string name="edit">Masukkan</string>
+    <string name="emoji">Emoji</string>
+    <string name="normal">Default</string>
+    <string name="locale_default">Default (%s)</string>
+    <string name="locale_other">Lainnya…</string>
+    <string name="locale_title">Lokal</string>
+    <string name="input">Masukkan</string>
+    <string name="remrec">Hapus</string>
+    <string name="add">Pilih…</string>
+    <string name="mark">Tandai</string>
+    <string name="rem">Hapus…</string>
+    <string name="code">Kode Poin</string>
+    <string name="nocode">Kode poin tidak valid</string>
+    <string name="cantopen">Tidak dapat membuka font</string>
+    <string name="cantread">Tidak dapat mengakses; aplikasi mungkin tidak memiliki izin untuk membaca</string>
+    <string name="denied">Anda telah menolak akses. Untuk menjelajahi kartu SD, harap berikan izin penyimpanan dari pengaturan Aplikasi.</string>
+</resources>
